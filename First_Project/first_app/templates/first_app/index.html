@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 {% load staticfiles %}
 
-<html class="no-js">
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">        
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Django Image Page </title>
-        <link rel="stylesheet" href="{% static 'first_app/style/style.css' %}"/>
+        <link rel="stylesheet" href="{% static 'first_app/css/style.css' %}" media="screen" title="no title"  charset="utf-8"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     </head>
     <body>
-        <h1> Hi this is a picture of Django</h1>
+        <p> Hi this is a picture of Django, please change to red </p>
         <img src= "{% static 'first_app/images/python.png' %}" alt="none">
 
     </body>
