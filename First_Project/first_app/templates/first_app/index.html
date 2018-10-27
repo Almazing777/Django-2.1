@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+{% load staticfiles %}
+
+<html class="no-js">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> First App </title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">        
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <title> Django Image Page </title>
+        <link rel="stylesheet" href="{% static 'first_app/style/style.css' %}"/>
     </head>
     <body>
-        <h1> Hello this is index.html!</h1>
-        {{ insert_me }}
+        <h1> Hi this is a picture of Django</h1>
+        <img src= "{% static 'first_app/images/python.png' %}" alt="none">
 
     </body>
 </html>
